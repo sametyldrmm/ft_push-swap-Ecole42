@@ -25,8 +25,11 @@ mantığa dayanır ve kolaylıkla anlaşılabilir. Ancak, sayıların gruplandı
 olarak hamle sayısı değişebilir.
 
 Var olabilecek en basit yöntem geliştirilmeye çalışılmıştır ve kısmende olsa başarılı olduğumu düşünüyorum.
-500 sayıda 1 grup tüm sayılar yaptığınızda hamle sayısı 1 milyonun üzerine çıkabilmektedir. En optimum koşşullarda ise 5200 olabilmektedir. (Tam puan)
+500 sayıda 1 500 lül bir grup olacak şekilde tüm sayılar yaptığınızda hamle sayısı 1 milyonun üzerine çıkabilmektedir. Matematiksel olarak grup sayısını değiştirerek en optimum koşşullara getirebilirseniz ise 5200 olabilmektedir. (Tam puan)
+Burada 2 farklı seçenek ortaya çıkar ya brute force gibi yöntemler ile en optimum koşlulları bulmaya çalışırsınız.
+Yada farklı grup değerlerini rasgele bir biçimde denersiniz. En iyi sonuç veren grup çifti değerlerini sürekli eleyerek bir veri seti ortaya çıkarırsınız. 
 
+Bu veri setinin anlatttıklarını bir fonksiyon haline getirip kaç sayıda nasıl bir grup çifti kullanmanız gerektiğini kısmen bulmuş olursunuz. 
 Bu nedenle, projede makine öğrenmesi tekniklerini kullanarak hamle sayısını minimize etmek mümkündür. Bunun için öncelikle 
 test verileri elde ederek, farklı sayı grupları ve sayı adetleri için hamle sayılarını hesaplamalıyız. Daha sonra, bu verileri
  kullanarak bir fonksiyon oluşturabilir ve bu fonksiyonu kullanarak hamle sayısını tahmin edebiliriz.
@@ -35,6 +38,7 @@ test verileri elde ederek, farklı sayı grupları ve sayı adetleri için hamle
 Projemin sonucunda, sıralama algoritmasını kendi fikirlerim doğrultusunda oluşturdum ve bunu projeye uyarladım. 
 Bu yöntem, önceden yapılmış sıralama algoritmalarını adapte etmek yerine, olasılık teorisine dayalı ve basit bir makine 
 öğrenmesi tekniği olan lineer regresyon modelini kullanarak tasarlandı.
+Projeden aldığım puan 96 dır.
 
 ### TEMEL FİKİR
 Temel fikir, A yığınındaki elemanları B yığınına atarak, B yığınındaki en büyük sayıyı bulup tekrar A yığınına geri 
